@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AuthModule } from './auth/auth.module';
 import { SharedModule } from './shared/shared.module';
 import { BooksModule } from './books/books.module';
+import { MaterialModule } from './material.module';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { BooksModule } from './books/books.module';
     SharedModule,
     AuthModule,
     CoreModule,
-    BooksModule
+    BooksModule,
+    MaterialModule
   ],
   bootstrap: [ AppComponent ]
 })
