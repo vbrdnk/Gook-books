@@ -15,8 +15,8 @@
     <mat-icon>aspect_ratio</mat-icon>
     <span class="nav-caption">Qoutes</span>
   </a>
-  <mat-list-item>
-    <button mat-icon-button (click)="onLogout()" *ngIf="authService.isAuthenticated()">
+  <mat-list-item  *ngIf="authService.isAuthenticated()">
+    <button mat-icon-button (click)="onLogout()">
       <mat-icon>eject</mat-icon>
       <span class="nav-caption">Logout</span>
     </button>

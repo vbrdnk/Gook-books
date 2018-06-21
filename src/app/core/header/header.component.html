@@ -1,12 +1,12 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" fxLayout="row"  fxLayoutAlign="space-between center">
   <div fxHide.gt-xs>
     <button mat-icon-button (click)="onToggleSidenav()">
       <mat-icon>menu</mat-icon>
     </button>
   </div>
-  <div>
+  <div class="logo-container">
     <a routerLink="/">
-      <img src="/assets/code-brackets.png" width="60" height="60" alt="">
+      <img src="/assets/code-brackets.png" class="logo"  alt="LOGO">
     </a>
   </div>
   <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
