@@ -11,6 +11,7 @@ import { AuthInterceptor } from '../shared/auth.interceptor';
 
 import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from '../material.module';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MaterialModule } from '../material.module';
   imports: [
     SharedModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule,
   ],
   exports: [
     AppRoutingModule,
