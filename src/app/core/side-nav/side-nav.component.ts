@@ -21,5 +21,6 @@ export class SideNavComponent implements OnInit {
   onLogout() {
     this.authService.logOut();
     this.router.navigate(['/login']);
+    this.onClose();
   }
 }
